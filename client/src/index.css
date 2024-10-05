@@ -1,3 +1,76 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#212121;
+    --second-color:#ffedad;
+    --white-color:#ffffff;
+}
+
+*{
+    font-family:"Roboto", sans-serif;
+    color:var(--main-color);
+}
+
+main{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 550px 1fr; 
+    gap: 0px 80px; 
+}
+
+nav{
+    height:100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+nav .list{
+    height:90%;
+    background:var(--main-color);
+    padding:50px 0 0 50px;
+    border-radius:0 25px 0 0;
+    margin:0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+nav .list li{
+    color:var(--white-color);
+    font-size:25px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+section{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section .project{
+    height:90%;
+}
+
+button{
+    background-color:var(--second-color);
+    color:var(--main-color);
+    border-radius: 12px;
+    padding:10px 15px;
+    font-size:21px;
+    border:none;
+    cursor:pointer;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.show{
+    color:white;
+    font-size:32px;
+    margin:0 24px 0;
+    cursor: pointer;
+}
